@@ -15,4 +15,8 @@ public  class Transaction {
         this.amount=amout;
         this.transactionReason=transactionReason;
     }
+    public String getTransactionReason(){
+        return transactionReason;
+    }
+
 }

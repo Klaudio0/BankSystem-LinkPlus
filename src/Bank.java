@@ -2,6 +2,7 @@ import java.util.*;
 public class Bank{
     private String bankName;
     private List<Account> accounts;
+    private List<Transaction>transactions;
     private double totalTransactionFee;
     private double totalTransferAmount;
     private double flatFee;
@@ -11,6 +12,7 @@ public class Bank{
     public Bank(String bankName, double flatFee, double percentFee) {
         this.bankName = bankName;
         this.accounts = new ArrayList<>();
+        this.transactions= new ArrayList<>();
         this.totalTransactionFee = 0.0;
         this.totalTransferAmount = 0.0;
         this.flatFee = flatFee;
@@ -21,6 +23,7 @@ public class Bank{
     public void addAccount(Account account) {
         accounts.add(account);
     }
+    public void addTransaction(Transaction transaction){transactions.add(transaction);}
 
     public Account getAccount(String accountId) throws Exception {
         for (Account account : accounts) {
@@ -64,10 +67,13 @@ public class Bank{
         return accounts;
     }
 
-    public List<String> getTransactions(String accountId) throws Exception {
-        Account account = getAccount(accountId);
-        return account.getTransactionHistory();
-    }
+
+//    public List<String> getTransactions(String accountId) throws Exception {
+//        Account account = getAccount(accountId);
+//        return account.getTransactionHistory();
+//    }
+
+    public List<Transaction> getTransactions(){return transactions;}
 
     public double getAccountBalance(String accountId) throws Exception {
         return getAccount(accountId).getBalance();

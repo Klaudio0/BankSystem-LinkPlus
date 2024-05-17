@@ -31,7 +31,7 @@ public class Test {   //klasa Test e cila do therritet funksioni main dhe klasat
                         listAccounts(bank);   //metode e cila liston Accounts te rregjistruar ne kete Banke
                         break;
                     case 7:
-                        listTransactions(scanner, bank);  //metode e cila kthen listen e Transaksioneve
+                        listTransactions(bank);  //metode e cila kthen listen e Transaksioneve
                         break;
                     case 8:
                         System.out.println("Exiting...");
@@ -100,6 +100,8 @@ public class Test {   //klasa Test e cila do therritet funksioni main dhe klasat
 
     private static void performTransfer(Scanner scanner, Bank bank) throws Exception {
         /*Ne kete metode ne mund te kryejme nje transaksion nga nje Account te nje tjeter*/
+        System.out.print("Enter the reason of this transfer: ");
+        String reason=scanner.nextLine();
         System.out.print("Enter originating account ID: ");
         String originatingAccountId = scanner.nextLine();
         System.out.print("Enter resulting account ID: ");
@@ -109,8 +111,12 @@ public class Test {   //klasa Test e cila do therritet funksioni main dhe klasat
         System.out.print("Use flat fee (true/false): ");
         boolean isFlatFee = scanner.nextBoolean();
 
+        Transaction transaction = new Transaction(amount,reason);
+        bank.addTransaction(transaction);
         bank.performTransfer(originatingAccountId, resultingAccountId, amount, isFlatFee);
         System.out.println("Transfer successful.");
+
+
 
 
     }
@@ -136,20 +142,10 @@ public class Test {   //klasa Test e cila do therritet funksioni main dhe klasat
             }
         }
     }
-    private static void listTransactions(Scanner scanner, Bank bank) throws Exception {
-        /*Ne kete metode*/
-
-        System.out.print("Enter account ID: ");
-        String accountId = scanner.nextLine();
-
-        List<String> transactions = bank.getTransactions(accountId);
-        if (transactions.isEmpty()) {
-            System.out.println("No transactions found for this account.");
-        } else {
-            System.out.println("--- List of Transactions ---");
-            for (String transaction : transactions) {
-                System.out.println(transaction);
-            }
+    private static void listTransactions(Bank bank){
+        List<Transaction>transactions=bank.getTransactions();
+        for (Transaction transaction: transactions){
+            System.out.println("Reason for this:\t" +transaction.getTransactionReason());
         }
     }
 

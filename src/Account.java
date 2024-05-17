@@ -37,7 +37,7 @@ public class Account {
         balance -= amount;
 
     }
-    public List<String> getTransactionHistory() {
-        return transactionHistory;
-    }
+//    public List<String> getTransactionHistory() {
+//        return transactionHistory;
+//    }
 }
