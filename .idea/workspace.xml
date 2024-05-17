@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c10413e-592f-427e-b439-0004637811e4" name="Changes" comment="LinkPlus.Al">
+    <list default="true" id="4c10413e-592f-427e-b439-0004637811e4" name="Changes" comment="Projekti i perfunduar ,Console App, i cili eshte i dokumentuar cdo rresht kodi, duke perdorur gjuhen OOP Java.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BankSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BankSystem.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -39,8 +39,18 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.Test.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.BankTest.executor": "Run",
+    "JUnit.BankTest.testDepositNegativeAmount.executor": "Run",
+    "JUnit.BankTest.testPerformTransferInsufficientFunds.executor": "Run",
+    "JUnit.BankTest.testPerformTransferNegativeAmount.executor": "Run",
+    "JUnit.BankTest.testWithdrawNegativeAmount.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/joker/IdeaProjects/BankSystem",
@@ -56,17 +66,63 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="JUnit.BankTest">
+    <configuration name="BankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BankSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankTest.testDepositNegativeAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="METHOD_NAME" value="testDepositNegativeAmount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankTest.testPerformTransferInsufficientFunds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="METHOD_NAME" value="testPerformTransferInsufficientFunds" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankTest.testPerformTransferNegativeAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="METHOD_NAME" value="testPerformTransferNegativeAmount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankTest.testWithdrawNegativeAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="METHOD_NAME" value="testWithdrawNegativeAmount" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BankTest" />
+        <item itemvalue="JUnit.BankTest.testDepositNegativeAmount" />
+        <item itemvalue="JUnit.BankTest.testWithdrawNegativeAmount" />
+        <item itemvalue="JUnit.BankTest.testPerformTransferNegativeAmount" />
+        <item itemvalue="JUnit.BankTest.testPerformTransferInsufficientFunds" />
       </list>
     </recent_temporary>
   </component>
@@ -87,7 +143,7 @@
       <updated>1715945295561</updated>
       <workItem from="1715945296763" duration="173000" />
       <workItem from="1715948093675" duration="4140000" />
-      <workItem from="1715976392268" duration="6188000" />
+      <workItem from="1715976392268" duration="9357000" />
     </task>
     <task id="LOCAL-00001" summary="LinkPlus.Al">
       <option name="closed" value="true" />
@@ -97,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715980296090</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Projekti i perfunduar ,Console App, i cili eshte i dokumentuar cdo rresht kodi, duke perdorur gjuhen OOP Java.">
+      <option name="closed" value="true" />
+      <created>1715983553277</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715983553277</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +169,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="LinkPlus.Al" />
-    <option name="LAST_COMMIT_MESSAGE" value="LinkPlus.Al" />
+    <MESSAGE value="Projekti i perfunduar ,Console App, i cili eshte i dokumentuar cdo rresht kodi, duke perdorur gjuhen OOP Java." />
+    <option name="LAST_COMMIT_MESSAGE" value="Projekti i perfunduar ,Console App, i cili eshte i dokumentuar cdo rresht kodi, duke perdorur gjuhen OOP Java." />
   </component>
 </project>
