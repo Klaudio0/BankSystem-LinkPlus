@@ -8,3 +8,4 @@ Mund te depozitojme para ne llogarine tone
 Llogaria eshte ne kembimin valutor (Dollar)
 Ne mund te shikojme se cilat Account jane te rregjistruar ne Bank por ky opsion mbetet per tu permiresuar pasi vetem manager of bank mund ta shohi kete ose dikush qe ka kete privilegj
 Ne mund edhte te shikojme Historine e Transaksioneve ne Banke
+Testet jane 100% passed!
